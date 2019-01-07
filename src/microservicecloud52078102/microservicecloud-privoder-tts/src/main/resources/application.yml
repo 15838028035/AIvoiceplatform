@@ -1,0 +1,31 @@
+server:
+  port: 19004
+
+spring:
+   application:
+    name: microservicecloud-onlinetts
+
+
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url:
+      #defaultZone: http://localhost:7001/eureka
+       defaultZone: http://127.0.0.1:18081/eureka/,http://127.0.0.1:18082/eureka/
+  instance:
+    instance-id: microservicecloud-provider-onlinetts-p19004
+    prefer-ip-address: true     #访问路径可以显示IP地址
+
+info:
+  app.name: thinkit-microservicecloud
+  company.name: www.thinkit.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+
+
+onlinetts:
+   ServerIp: 219.234.149.142
+   ServerPort:  80
+
+
+logging:
+  config: classpath:logback-thinkit.xml

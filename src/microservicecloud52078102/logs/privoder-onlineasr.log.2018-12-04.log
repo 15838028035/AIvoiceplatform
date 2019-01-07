@@ -1,0 +1,444 @@
+2018-12-04 15:18:49.183 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+2018-12-04 15:18:50.409 [main] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/microservicecloud-onlineasr/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2018-12-04 15:18:50.411 [main] INFO  com.thinkit.OnlineASR_privoder_App - No active profile set, falling back to default profiles: default
+2018-12-04 15:18:50.422 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60fa3495: startup date [Tue Dec 04 15:18:50 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@43c1b556
+2018-12-04 15:18:51.934 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.thinkit]' package. Please check your configuration.
+2018-12-04 15:18:52.125 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-04 15:18:52.619 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=0b9606e2-3306-33ac-9719-a707dc9ff53c
+2018-12-04 15:18:52.639 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-04 15:18:52.747 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$4886f234] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-04 15:18:52.757 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$165a4bf3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-04 15:18:52.808 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$32744ef0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-04 15:18:52.993 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @10337ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-12-04 15:18:53.228 [main] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 19003
+2018-12-04 15:18:53.230 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_161-b12
+2018-12-04 15:18:53.451 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2018-12-04 15:18:53.451 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2018-12-04 15:18:53.454 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+2018-12-04 15:18:53.462 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+2018-12-04 15:18:53.463 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3041 ms
+2018-12-04 15:18:53.710 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-04 15:18:53.713 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+2018-12-04 15:18:53.714 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-04 15:18:53.714 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-04 15:18:53.714 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-04 15:18:53.714 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-04 15:18:53.714 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-12-04 15:18:53.714 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2018-12-04 15:18:53.714 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-12-04 15:18:53.719 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@2ead6ba4{application,/,[file:///C:/Users/mike/AppData/Local/Temp/jetty-docbase.5823891317863498204.19003/],AVAILABLE}
+2018-12-04 15:18:53.720 [main] INFO  org.eclipse.jetty.server.Server - Started @11065ms
+2018-12-04 15:18:55.636 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2018-12-04 15:18:56.236 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60fa3495: startup date [Tue Dec 04 15:18:50 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@43c1b556
+2018-12-04 15:18:56.306 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/onlineasr/rec],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.voiceprint.VoiceResult com.thinkit.microservicecloud.controller.OnlineASR_controller.rec(com.thinkit.microservicecloud.entities.onlineasr.VoiceRec)
+2018-12-04 15:18:56.307 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/service/realtimeasr],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.RealtimeAsr3.realtimeAsr(com.thinkit.microservicecloud.entities.onlineasr.RealtimeAsrReq)
+2018-12-04 15:18:56.307 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/service/realtimeAsrIndex],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.RealtimeAsr4.realtimeAsrIndex(com.thinkit.microservicecloud.entities.onlineasr.RealtimeAsrReq)
+2018-12-04 15:18:56.307 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/service/realtimeasr_cache],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.RealtimeAsr4.realtimeAsr(com.thinkit.microservicecloud.entities.onlineasr.RealtimeAsrReq)
+2018-12-04 15:18:56.308 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/onlineasr/recording],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.thinkit.microservicecloud.controller.TestController.rec(com.thinkit.microservicecloud.entities.onlineasr.PointCut,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-12-04 15:18:56.310 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-04 15:18:56.310 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-04 15:18:56.348 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-04 15:18:56.349 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-04 15:18:56.407 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-04 15:18:57.567 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-12-04 15:18:57.567 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-04 15:18:57.568 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-12-04 15:18:57.570 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-04 15:18:57.571 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-04 15:18:57.572 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-12-04 15:18:57.572 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2018-12-04 15:18:57.573 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-12-04 15:18:57.574 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-12-04 15:18:57.574 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-12-04 15:18:57.574 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-04 15:18:57.575 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-12-04 15:18:57.575 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-12-04 15:18:57.577 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-12-04 15:18:57.578 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-04 15:18:57.578 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-04 15:18:57.579 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-12-04 15:18:57.579 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-04 15:18:57.580 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-12-04 15:18:57.580 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-12-04 15:18:57.580 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-04 15:18:57.581 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-04 15:18:57.581 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-04 15:18:57.582 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-04 15:18:57.582 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-12-04 15:18:57.582 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-04 15:18:57.583 [main] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-04 15:18:58.148 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-12-04 15:18:58.149 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-04 15:18:58.152 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-12-04 15:18:58.152 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-04 15:18:58.264 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-12-04 15:18:58.265 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-04 15:18:58.274 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-12-04 15:18:58.276 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-12-04 15:18:58.276 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-12-04 15:18:58.277 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-12-04 15:18:58.277 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+2018-12-04 15:18:58.278 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-12-04 15:18:58.280 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-12-04 15:18:58.293 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-12-04 15:18:58.304 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+2018-12-04 15:18:58.309 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-12-04 15:18:58.320 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=60fa3495,type=ConfigurationPropertiesRebinder]
+2018-12-04 15:18:58.323 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-12-04 15:18:58.325 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-12-04 15:18:58.326 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+2018-12-04 15:18:58.579 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2018-12-04 15:18:58.587 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2018-12-04 15:18:58.621 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2018-12-04 15:18:59.119 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2018-12-04 15:18:59.119 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2018-12-04 15:18:59.210 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2018-12-04 15:18:59.210 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2018-12-04 15:18:59.381 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 15:18:59.659 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-04 15:18:59.659 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-04 15:18:59.660 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-04 15:18:59.660 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-04 15:18:59.660 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-04 15:18:59.660 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-04 15:18:59.660 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-04 15:19:00.342 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2018-12-04 15:19:00.343 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2018-12-04 15:19:00.345 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-12-04 15:19:00.347 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1543907940347 with initial instances count: 0
+2018-12-04 15:19:00.367 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application microservicecloud-onlineasr with eureka with status UP
+2018-12-04 15:19:00.368 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1543907940368, current=UP, previous=STARTING]
+2018-12-04 15:19:00.370 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-ONLINEASR/microservicecloud-provider-onlineasr-p19003: registering service...
+2018-12-04 15:19:00.378 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-12-04 15:19:00.386 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-12-04 15:19:00.394 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-12-04 15:19:00.396 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-12-04 15:19:00.398 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-12-04 15:19:00.402 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-12-04 15:19:00.407 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-12-04 15:19:00.409 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-12-04 15:19:00.415 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-12-04 15:19:00.417 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-12-04 15:19:00.420 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-12-04 15:19:00.421 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-12-04 15:19:00.423 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-12-04 15:19:00.427 [main] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-12-04 15:19:00.448 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-04 15:19:00.448 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-04 15:19:00.463 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2018-12-04 15:19:00.518 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-ONLINEASR/microservicecloud-provider-onlineasr-p19003 - registration status: 204
+2018-12-04 15:19:00.532 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@31a2a9fa{HTTP/1.1,[http/1.1]}{0.0.0.0:19003}
+2018-12-04 15:19:00.535 [main] INFO  o.s.b.c.e.jetty.JettyEmbeddedServletContainer - Jetty started on port(s) 19003 (http/1.1)
+2018-12-04 15:19:00.536 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 19003
+2018-12-04 15:19:00.540 [main] INFO  com.thinkit.OnlineASR_privoder_App - Started OnlineASR_privoder_App in 15.71 seconds (JVM running for 17.885)
+2018-12-04 15:19:01.342 [RMI TCP Connection(8)-127.0.0.1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-12-04 15:19:02.673 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.680 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.685 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.690 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.695 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.699 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.704 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.711 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.715 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.718 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.723 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.726 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.730 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.734 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.737 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.740 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.744 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.748 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.750 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.754 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.757 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.762 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.766 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.769 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.773 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.778 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.781 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.784 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.789 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.793 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)
+2018-12-04 15:19:02.797 [Druid-ConnectionPool-Create-1872158052] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://219.234.149.142:3306/thinkit, errorCode 1130, state HY000
+java.sql.SQLException: null,  message from server: "Host '219.234.149.131' is not allowed to connect to this MariaDB server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:997)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2670)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2109)

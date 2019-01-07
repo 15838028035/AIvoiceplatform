@@ -1,0 +1,63 @@
+server:
+  port: 19007
+
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
+  type-aliases-package: com.thinkit.microservicecloud.entities.ability_online   # 所有Entity别名类所在包
+  mapper-locations:
+           - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
+
+
+spring:
+   application:
+       name: microservicecloud-ability-onlineasr
+   redis:
+           database: 0
+           host: 219.234.149.142
+           port: 6379
+           pool:
+              max-active: 8
+              max-idle: 8
+              min-idle: 0
+              max-wait: -1
+           timeout: 5000
+         # password: test
+
+   datasource:
+        type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+        driver-class-name: com.mysql.jdbc.Driver             # mysql驱动包
+        url: jdbc:mysql://192.168.14.215:3306/thinkit?useUnicode=true&characterEncoding=utf8             # 数据库名称
+        username: root
+        password: 123456
+        dbcp2:
+            min-idle: 5                                           # 数据库连接池的最小维持连接数
+            initial-size: 5                                       # 初始化连接数
+            max-total: 5                                          # 最大连接数
+            max-wait-millis: 10000                                # 等待连接获取的最大超时时间
+
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url:
+      #defaultZone: http://localhost:7001/eureka
+       defaultZone: http://127.0.0.1:18081/eureka/,http://127.0.0.1:18082/eureka/
+  instance:
+    instance-id: microservicecloud-ability-onlineasr-p19007
+    prefer-ip-address: true     #访问路径可以显示IP地址
+
+info:
+  app.name: thinkit-microservicecloud
+  company.name: www.thinkit.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+
+
+audiokeeper:
+   ip: 219.234.149.142
+   port:  18100
+   connect_timeout: 3000
+   read_timeout: 30000
+
+
+logging:
+  config: classpath:logback-thinkit.xml
+

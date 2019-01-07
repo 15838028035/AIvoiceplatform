@@ -1,0 +1,76 @@
+2018-12-29 16:44:10.090 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+2018-12-29 16:44:11.164 [main] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/microservicecloud-voiceprint/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2018-12-29 16:44:11.166 [main] INFO  com.thinkit.VoicePrint_privoder_App - No active profile set, falling back to default profiles: default
+2018-12-29 16:44:11.177 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2e54db99: startup date [Sat Dec 29 16:44:11 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@618b19ad
+2018-12-29 16:44:11.697 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=b355f175-5305-3a96-ab8b-f24df42bf10f
+2018-12-29 16:44:11.709 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-29 16:44:11.757 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e5276a08] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-29 16:44:11.855 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @5405ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-12-29 16:44:11.948 [main] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 19002
+2018-12-29 16:44:11.950 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_161-b12
+2018-12-29 16:44:12.036 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2018-12-29 16:44:12.036 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2018-12-29 16:44:12.037 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+2018-12-29 16:44:12.042 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+2018-12-29 16:44:12.042 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 865 ms
+2018-12-29 16:44:12.135 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-29 16:44:12.137 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-29 16:44:12.137 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-29 16:44:12.138 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-29 16:44:12.138 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-29 16:44:12.138 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2018-12-29 16:44:12.141 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@670d4d38{application,/,[file:///C:/Users/mike/AppData/Local/Temp/jetty-docbase.8580141385987494159.19002/],AVAILABLE}
+2018-12-29 16:44:12.142 [main] INFO  org.eclipse.jetty.server.Server - Started @5692ms
+2018-12-29 16:44:12.916 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2e54db99: startup date [Sat Dec 29 16:44:11 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@618b19ad
+2018-12-29 16:44:12.962 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/voiceprint/rec],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.voiceprint.VoiceResult com.thinkit.microservicecloud.controller.VoicePrintController.add(com.thinkit.microservicecloud.entities.voiceprint.VoiceUser)
+2018-12-29 16:44:12.963 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/voiceprint/rec_php],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.voiceprint.VoiceResult com.thinkit.microservicecloud.controller.VP_controller.add(com.thinkit.microservicecloud.entities.voiceprint.VoiceUser)
+2018-12-29 16:44:12.966 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-29 16:44:12.966 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-29 16:44:12.993 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-29 16:44:12.993 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-29 16:44:13.022 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-29 16:44:13.301 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-12-29 16:44:13.301 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-29 16:44:13.306 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-12-29 16:44:13.306 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-29 16:44:13.358 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-12-29 16:44:13.366 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-12-29 16:44:13.367 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-12-29 16:44:13.367 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-12-29 16:44:13.369 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-12-29 16:44:13.380 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-12-29 16:44:13.389 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=2e54db99,type=ConfigurationPropertiesRebinder]
+2018-12-29 16:44:13.501 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2018-12-29 16:44:13.507 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2018-12-29 16:44:13.543 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2018-12-29 16:44:13.931 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2018-12-29 16:44:13.931 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2018-12-29 16:44:14.101 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2018-12-29 16:44:14.102 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2018-12-29 16:44:14.318 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-29 16:44:14.509 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-29 16:44:14.509 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-29 16:44:14.509 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-29 16:44:14.509 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-29 16:44:14.509 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-29 16:44:14.509 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-29 16:44:14.509 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-29 16:44:14.634 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2018-12-29 16:44:14.636 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2018-12-29 16:44:14.638 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-12-29 16:44:14.640 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1546073054640 with initial instances count: 3
+2018-12-29 16:44:14.656 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application microservicecloud-voiceprint with eureka with status UP
+2018-12-29 16:44:14.657 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1546073054657, current=UP, previous=STARTING]
+2018-12-29 16:44:14.659 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-VOICEPRINT/microservicecloud-provider-voiceprint-p19002: registering service...
+2018-12-29 16:44:14.678 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-29 16:44:14.678 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-29 16:44:14.692 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-12-29 16:44:14.701 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-VOICEPRINT/microservicecloud-provider-voiceprint-p19002 - registration status: 204
+2018-12-29 16:44:14.719 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@131ff6fa{HTTP/1.1,[http/1.1]}{0.0.0.0:19002}
+2018-12-29 16:44:14.722 [main] INFO  o.s.b.c.e.jetty.JettyEmbeddedServletContainer - Jetty started on port(s) 19002 (http/1.1)
+2018-12-29 16:44:14.723 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 19002
+2018-12-29 16:44:14.726 [main] INFO  com.thinkit.VoicePrint_privoder_App - Started VoicePrint_privoder_App in 6.82 seconds (JVM running for 8.276)
+2018-12-29 16:49:14.513 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-29 16:54:14.515 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-29 16:59:14.518 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-29 17:04:14.520 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

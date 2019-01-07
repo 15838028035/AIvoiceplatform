@@ -1,0 +1,25 @@
+
+
+spring:
+  application:
+    name: config-server
+  cloud:
+     config:
+       server:
+          git:
+            uri: https://gitee.com/smallSeiya/config.git
+            username: 1421320602@qq.com
+            password: zb666bz
+       label: master    #配置文件所在的分支
+
+server:
+  port: 8888
+
+eureka:
+    client: #客户端注册进eureka服务列表内
+      service-url:
+        #defaultZone: http://localhost:7001/eureka
+         defaultZone: http://www.eureka02.com:18082/eureka/,http://www.eureka01.com:18081/eureka/
+    instance:
+      instance-id: microservicecloud-config-server-p8888
+      prefer-ip-address: true     #访问路径可以显示IP地址

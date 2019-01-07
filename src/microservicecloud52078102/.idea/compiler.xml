@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="microservicecloud-api" />
+        <module name="microservicecloud-configclient" />
+        <module name="microservicecloud-configserver" />
+        <module name="microservicecloud-consumer-ability-service" />
+        <module name="microservicecloud-consumer-console" />
+        <module name="microservicecloud-consumer-mysqltest" />
+        <module name="microservicecloud-consumer-service" />
+        <module name="microservicecloud-consumer-userlogin" />
+        <module name="microservicecloud-eureka01" />
+        <module name="microservicecloud-eureka02" />
+        <module name="microservicecloud-privoder-console" />
+        <module name="microservicecloud-privoder-onlineasr" />
+        <module name="microservicecloud-privoder-tts" />
+        <module name="microservicecloud-privoder-userlogin" />
+        <module name="microservicecloud-privoder-voiceprint" />
+        <module name="microservicecloud-provider-ability-onlineasr" />
+        <module name="microservicecloud-provider-mysqltest" />
+        <module name="microservicecloud-provider-onlinetts" />
+        <module name="microservicecloudapi" />
+        <module name="microservicecloudeureka01" />
+        <module name="microservicecloudeureka02" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="microservicecloud--provider-onlinetts" target="1.8" />
+      <module name="microservicecloud-privoder-nlu" target="1.8" />
+      <module name="microservicecloud-provider-test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

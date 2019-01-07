@@ -1,0 +1,20 @@
+server:
+  port: 20008
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+       #defaultZone:  http://www.eureka02.com:18082/eureka/,http://www.eureka01.com:18081/eureka/
+       defaultZone:  http://127.0.0.1:18082/eureka/,http://127.0.0.1:18081/eureka/
+
+# feign 调用分两层，ribbon 和 hystrix (http 调用超时问题)
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 30000
+
+feign:
+    hystrix:
+       enabled: true
+
+logging:
+  config: classpath:logback-thinkit.xml

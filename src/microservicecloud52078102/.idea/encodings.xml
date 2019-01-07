@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-configclient" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-configserver" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-consumer-ability-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-consumer-console" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-consumer-mysqltest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-consumer-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-consumer-tts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-consumer-userlogin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-eureka01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-eureka02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-privoder-console" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-privoder-nlu" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-privoder-onlineasr" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-privoder-onlineasr/src/main/resources/config.ini" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-privoder-tts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-privoder-userlogin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-privoder-voiceprint" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-privoder-voiceprint/src/main/java/com/thinkit/microservicecloud/controller/VP_controller.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-privoder-voiceprint/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-provider-ability-onlineasr" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-provider-mysqltest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-provider-onlinetts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-provider-tts" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

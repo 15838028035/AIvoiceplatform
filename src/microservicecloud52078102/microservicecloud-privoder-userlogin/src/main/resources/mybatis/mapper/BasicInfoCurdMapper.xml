@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.thinkit.microservicecloud.dao.BasicInfoCurd">
+
+
+	<insert id="insert_basicinfo"  parameterType="com.thinkit.microservicecloud.entities.userlogin.UserRegister" >
+		insert into basic_info(username,userid) values(#{username},#{userid});
+	</insert>
+
+</mapper>
+ 
+

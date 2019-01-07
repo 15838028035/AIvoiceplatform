@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.thinkit.microservicecloud.dao.ServiceCurd">
+
+
+    <insert id="createService"  parameterType="com.thinkit.microservicecloud.entities.console.AppService" useGeneratedKeys="true" keyProperty="serviceid" >
+		insert into service(productid,creatTime,indate,state,qps,secret_key,appid) values(#{productid},now(),#{indate},#{state},#{qps},#{secret_key},#{appid});
+	</insert>
+
+
+
+
+</mapper>
+ 
+

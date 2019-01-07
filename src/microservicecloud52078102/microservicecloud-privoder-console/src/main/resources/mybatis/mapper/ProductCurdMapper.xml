@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.thinkit.microservicecloud.dao.ProductCurd">
+
+	<select id="selectProducts"  resultType="com.thinkit.microservicecloud.entities.console.ServiceProduct" >
+       select  id, typeid, product_name  from product
+	</select>
+
+
+	<select id="selectById"  resultType="com.thinkit.microservicecloud.entities.console.ServiceProduct" parameterType="Integer">
+       select  *   from product where  id = #{id}
+	</select>
+
+
+</mapper>
+ 
+

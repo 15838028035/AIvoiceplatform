@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.thinkit.microservicecloud.dao.AppCurd">
+
+	<insert id="createApp"  parameterType="com.thinkit.microservicecloud.entities.console.UserApp" useGeneratedKeys="true" keyProperty="id">
+		insert into app(appid,appkey,appname,field,platform,description,createTime,userid) values(#{appid},#{appkey},#{appname},#{field},#{platform},#{description},now(),#{userid});
+	</insert>
+
+	<select id="myapps" resultType="com.thinkit.microservicecloud.entities.console.MyApps"   >
+		select app.id,app.appid,appkey,appname,count(*) as count from app,service where  app.id = service.appid and userid= #{userid}  group by  service.appid;
+	</select>
+
+	<select id="appdetail" resultType="com.thinkit.microservicecloud.entities.console.Appdetail"   >
+		select product.product_name,product_type.name as product_type,creatTime,indate,state,qps,secret_key from product,product_type,service  where  service.appid = #{appid}    and service.productid=product.id and product.typeid=product_type.id ;
+	</select>
+
+	<select id="delapp"  parameterType="java.lang.Integer"   >
+      delete from app where id= #{id}
+	</select>
+
+	<select id="delapp_service"  parameterType="java.lang.Integer"   >
+      delete from service where appid= #{id}
+	</select>
+
+</mapper>
+ 
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.thinkit.microservicecloud.dao.TtsDao">
+
+	<select id="findbyId" resultType="com.thinkit.microservicecloud.entities.TtsInfo" parameterType="Long">
+		select id,text,date from tts where id=#{id};
+	</select>
+	<select id="findall" resultType="com.thinkit.microservicecloud.entities.TtsInfo">
+		select * from tts;
+	</select>
+	<insert id="insert" parameterType="com.thinkit.microservicecloud.entities.TtsInfo">
+		INSERT INTO tts(text,date) VALUES(#{text},now());
+	</insert>
+
+</mapper>
+ 
+

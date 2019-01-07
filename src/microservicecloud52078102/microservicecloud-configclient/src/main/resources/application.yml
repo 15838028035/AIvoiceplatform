@@ -1,0 +1,28 @@
+
+
+spring:
+  application:
+    name: config-client
+  cloud:
+   config:
+     name: myconfig
+     profile: aa
+     label: master
+     discovery:
+       enabled: true
+       service-id: config-server
+
+
+
+
+server:
+  port: 19100
+
+eureka:
+    client: #客户端注册进eureka服务列表内
+      service-url:
+        #defaultZone: http://localhost:7001/eureka
+         defaultZone: http://www.eureka02.com:18082/eureka/,http://www.eureka01.com:18081/eureka/
+    instance:
+      instance-id: microservicecloud-config-client-p19100
+      prefer-ip-address: true     #访问路径可以显示IP地址

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.thinkit.microservicecloud.dao.PersonalCertificateCurd">
+
+	<insert id="create"  parameterType="com.thinkit.microservicecloud.entities.console.Personal_Certificate" useGeneratedKeys="true" keyProperty="id"  >
+		insert into personal_certificate(ID_number,realName,photo1,photo2,address,user_id,company_id,status,creatTime,opTime) values(#{ID_number},#{realName},#{photo1},#{photo2},#{address},#{user_id},#{company_id},#{status},now(),now());
+	</insert>
+
+
+
+
+</mapper>
+ 
+

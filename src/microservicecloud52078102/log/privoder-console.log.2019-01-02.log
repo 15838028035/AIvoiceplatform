@@ -1,0 +1,893 @@
+2019-01-02 10:58:50.332 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+2019-01-02 10:58:51.455 [main] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/microservicecloud-console/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-01-02 10:58:51.460 [main] INFO  com.thinkit.Provider_console_app - No active profile set, falling back to default profiles: default
+2019-01-02 10:58:51.480 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 10:58:51 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 10:58:52.467 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'interceptorConfig' with a different definition: replacing [Generic bean: class [com.thinkit.microservicecloud.aop.InterceptorConfig]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\应用开发组git\语音开放平台\新版\OpenPlatform\src\microservicecloud52078102\microservicecloud-privoder-console\target\classes\com\thinkit\microservicecloud\aop\InterceptorConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=webAppConfig; factoryMethodName=interceptorConfig; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/thinkit/microservicecloud/aop/WebAppConfig.class]]
+2019-01-02 10:58:52.729 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-02 10:58:53.178 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=5fc1073e-3b7d-3ee7-a8ee-256df9f61c6f
+2019-01-02 10:58:53.191 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-02 10:58:53.268 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$10e83de3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 10:58:53.294 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2d0240e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 10:58:53.415 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @9660ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-01-02 10:58:53.513 [main] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 19008
+2019-01-02 10:58:53.514 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_161-b12
+2019-01-02 10:58:53.600 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-01-02 10:58:53.600 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-01-02 10:58:53.601 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+2019-01-02 10:58:53.606 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+2019-01-02 10:58:53.606 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2126 ms
+2019-01-02 10:58:53.699 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-02 10:58:53.701 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-02 10:58:53.701 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2019-01-02 10:58:53.704 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@d613308{application,/,[file:///C:/Users/mike/AppData/Local/Temp/jetty-docbase.5793925246904595667.19008/],AVAILABLE}
+2019-01-02 10:58:53.705 [main] INFO  org.eclipse.jetty.server.Server - Started @9951ms
+2019-01-02 10:58:54.824 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/basicinfo/updateInfo/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.BasicInfoController.updateinfo(com.thinkit.microservicecloud.entities.console.BasicInfo,java.lang.String)
+2019-01-02 10:58:54.825 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/company_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.CompanyInfoController.company(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2019-01-02 10:58:54.826 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/personal_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.PersonalInfoController.person(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,java.lang.String)
+2019-01-02 10:58:54.826 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/sdk/offlineasrSDK/{session}],methods=[GET]}" onto org.springframework.http.ResponseEntity<org.springframework.core.io.InputStreamResource> com.thinkit.microservicecloud.controller.SDKdownloadController.download_offlineasrSDK(javax.servlet.http.HttpServletRequest)
+2019-01-02 10:58:54.827 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/privoder/console/serviceproduct/selectProducts/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.ServiceProduct> com.thinkit.microservicecloud.controller.ServiceProductController.selectProducts()
+2019-01-02 10:58:54.827 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/myapps/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.MyApps> com.thinkit.microservicecloud.controller.UserAppController.myapps(java.lang.String)
+2019-01-02 10:58:54.827 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/delapp/{session}/{id}],methods=[DELETE]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.delapp(java.lang.String,int)
+2019-01-02 10:58:54.828 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/appdetail/{session}/{appid}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.Appdetail> com.thinkit.microservicecloud.controller.UserAppController.appdetail(java.lang.String,java.lang.String)
+2019-01-02 10:58:54.828 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/createapp/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.createUserApp(com.thinkit.microservicecloud.entities.console.UserApp,java.lang.String)
+2019-01-02 10:58:54.831 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-02 10:58:54.832 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-02 10:58:55.224 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 10:58:51 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 10:58:56.746 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-01-02 10:58:57.445 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 10:58:57.445 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 10:58:57.449 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 10:58:57.449 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 10:58:57.553 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-01-02 10:58:57.554 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-02 10:58:57.560 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-02 10:58:57.561 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-02 10:58:57.562 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-02 10:58:57.564 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-02 10:58:57.575 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-02 10:58:57.583 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=69c79f09,type=ConfigurationPropertiesRebinder]
+2019-01-02 10:58:57.587 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-01-02 10:58:57.750 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-01-02 10:58:57.756 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-01-02 10:58:57.791 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-01-02 10:58:58.223 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-01-02 10:58:58.223 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-01-02 10:58:58.299 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-01-02 10:58:58.299 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-01-02 10:58:58.440 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 10:58:58.679 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-01-02 10:58:58.679 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-01-02 10:58:58.679 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-01-02 10:58:58.679 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-01-02 10:58:58.679 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-01-02 10:58:58.679 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-01-02 10:58:58.679 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-01-02 10:58:59.263 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-01-02 10:58:59.264 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-01-02 10:58:59.266 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-01-02 10:58:59.269 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1546397939269 with initial instances count: 0
+2019-01-02 10:58:59.287 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application microservicecloud-console with eureka with status UP
+2019-01-02 10:58:59.287 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1546397939287, current=UP, previous=STARTING]
+2019-01-02 10:58:59.289 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008: registering service...
+2019-01-02 10:58:59.355 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-02 10:58:59.355 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-02 10:58:59.373 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2019-01-02 10:58:59.404 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@25673087{HTTP/1.1,[http/1.1]}{0.0.0.0:19008}
+2019-01-02 10:58:59.406 [main] INFO  o.s.b.c.e.jetty.JettyEmbeddedServletContainer - Jetty started on port(s) 19008 (http/1.1)
+2019-01-02 10:58:59.407 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 19008
+2019-01-02 10:58:59.410 [main] INFO  com.thinkit.Provider_console_app - Started Provider_console_app in 13.695 seconds (JVM running for 15.657)
+2019-01-02 10:58:59.459 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008 - registration status: 204
+2019-01-02 10:59:29.268 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-01-02 10:59:29.268 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-01-02 10:59:29.268 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-01-02 10:59:29.269 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-01-02 10:59:29.269 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-01-02 10:59:29.281 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: false
+2019-01-02 10:59:29.282 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-01-02 10:59:29.376 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-01-02 11:03:58.698 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 11:08:51.944 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+2019-01-02 11:08:53.030 [main] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/microservicecloud-console/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-01-02 11:08:53.036 [main] INFO  com.thinkit.Provider_console_app - No active profile set, falling back to default profiles: default
+2019-01-02 11:08:53.054 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 11:08:53 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 11:08:53.452 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'interceptorConfig' with a different definition: replacing [Generic bean: class [com.thinkit.microservicecloud.aop.InterceptorConfig]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\应用开发组git\语音开放平台\新版\OpenPlatform\src\microservicecloud52078102\microservicecloud-privoder-console\target\classes\com\thinkit\microservicecloud\aop\InterceptorConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=webAppConfig; factoryMethodName=interceptorConfig; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/thinkit/microservicecloud/aop/WebAppConfig.class]]
+2019-01-02 11:08:53.571 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-02 11:08:53.752 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=5fc1073e-3b7d-3ee7-a8ee-256df9f61c6f
+2019-01-02 11:08:53.766 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-02 11:08:53.841 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$10e83de3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 11:08:53.867 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2d0240e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 11:08:53.979 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @7780ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-01-02 11:08:54.083 [main] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 19008
+2019-01-02 11:08:54.085 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_161-b12
+2019-01-02 11:08:54.181 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-01-02 11:08:54.181 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-01-02 11:08:54.183 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+2019-01-02 11:08:54.190 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+2019-01-02 11:08:54.190 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1136 ms
+2019-01-02 11:08:54.294 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-02 11:08:54.296 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-02 11:08:54.296 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2019-01-02 11:08:54.300 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@d613308{application,/,[file:///C:/Users/mike/AppData/Local/Temp/jetty-docbase.5432396882223739176.19008/],AVAILABLE}
+2019-01-02 11:08:54.300 [main] INFO  org.eclipse.jetty.server.Server - Started @8102ms
+2019-01-02 11:08:54.816 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/basicinfo/updateInfo/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.BasicInfoController.updateinfo(com.thinkit.microservicecloud.entities.console.BasicInfo,java.lang.String)
+2019-01-02 11:08:54.818 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/company_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.CompanyInfoController.company(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2019-01-02 11:08:54.818 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/personal_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.PersonalInfoController.person(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,java.lang.String)
+2019-01-02 11:08:54.819 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/sdk/offlineasrSDK/{session}],methods=[GET]}" onto org.springframework.http.ResponseEntity<org.springframework.core.io.InputStreamResource> com.thinkit.microservicecloud.controller.SDKdownloadController.download_offlineasrSDK(javax.servlet.http.HttpServletRequest)
+2019-01-02 11:08:54.820 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/privoder/console/serviceproduct/selectProducts/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.ServiceProduct> com.thinkit.microservicecloud.controller.ServiceProductController.selectProducts()
+2019-01-02 11:08:54.820 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/createapp/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.createUserApp(com.thinkit.microservicecloud.entities.console.UserApp,java.lang.String)
+2019-01-02 11:08:54.820 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/delapp/{session}/{id}],methods=[DELETE]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.delapp(java.lang.String,int)
+2019-01-02 11:08:54.821 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/myapps/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.MyApps> com.thinkit.microservicecloud.controller.UserAppController.myapps(java.lang.String)
+2019-01-02 11:08:54.821 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/appdetail/{session}/{appid}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.Appdetail> com.thinkit.microservicecloud.controller.UserAppController.appdetail(java.lang.String,java.lang.String)
+2019-01-02 11:08:54.825 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-02 11:08:54.825 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-02 11:08:55.082 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 11:08:53 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 11:08:56.629 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-01-02 11:08:57.218 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 11:08:57.218 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 11:08:57.222 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 11:08:57.222 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 11:08:57.313 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-01-02 11:08:57.315 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-02 11:08:57.322 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-02 11:08:57.323 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-02 11:08:57.324 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-02 11:08:57.326 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-02 11:08:57.338 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-02 11:08:57.349 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=69c79f09,type=ConfigurationPropertiesRebinder]
+2019-01-02 11:08:57.356 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-01-02 11:08:57.533 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-01-02 11:08:57.541 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-01-02 11:08:57.577 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-01-02 11:08:57.998 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-01-02 11:08:57.998 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-01-02 11:08:58.079 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-01-02 11:08:58.079 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-01-02 11:08:58.222 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 11:08:58.466 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-01-02 11:08:58.466 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-01-02 11:08:58.467 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-01-02 11:08:58.467 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-01-02 11:08:58.467 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-01-02 11:08:58.467 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-01-02 11:08:58.467 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-01-02 11:08:58.573 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-01-02 11:08:58.575 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-01-02 11:08:58.577 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-01-02 11:08:58.580 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1546398538580 with initial instances count: 1
+2019-01-02 11:08:58.596 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application microservicecloud-console with eureka with status UP
+2019-01-02 11:08:58.596 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1546398538596, current=UP, previous=STARTING]
+2019-01-02 11:08:58.598 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008: registering service...
+2019-01-02 11:08:58.618 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-02 11:08:58.618 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-02 11:08:58.636 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2019-01-02 11:08:58.644 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008 - registration status: 204
+2019-01-02 11:08:58.667 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@25673087{HTTP/1.1,[http/1.1]}{0.0.0.0:19008}
+2019-01-02 11:08:58.669 [main] INFO  o.s.b.c.e.jetty.JettyEmbeddedServletContainer - Jetty started on port(s) 19008 (http/1.1)
+2019-01-02 11:08:58.670 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 19008
+2019-01-02 11:08:58.673 [main] INFO  com.thinkit.Provider_console_app - Started Provider_console_app in 11.151 seconds (JVM running for 12.475)
+2019-01-02 11:13:58.471 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 11:14:34.147 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+2019-01-02 11:14:35.226 [main] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/microservicecloud-console/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-01-02 11:14:35.230 [main] INFO  com.thinkit.Provider_console_app - No active profile set, falling back to default profiles: default
+2019-01-02 11:14:35.248 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 11:14:35 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 11:14:35.681 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'interceptorConfig' with a different definition: replacing [Generic bean: class [com.thinkit.microservicecloud.aop.InterceptorConfig]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\应用开发组git\语音开放平台\新版\OpenPlatform\src\microservicecloud52078102\microservicecloud-privoder-console\target\classes\com\thinkit\microservicecloud\aop\InterceptorConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=webAppConfig; factoryMethodName=interceptorConfig; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/thinkit/microservicecloud/aop/WebAppConfig.class]]
+2019-01-02 11:14:35.802 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-02 11:14:35.986 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=5fc1073e-3b7d-3ee7-a8ee-256df9f61c6f
+2019-01-02 11:14:36.000 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-02 11:14:36.075 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$10e83de3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 11:14:36.099 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2d0240e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 11:14:36.223 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @7214ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-01-02 11:14:36.324 [main] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 19008
+2019-01-02 11:14:36.326 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_161-b12
+2019-01-02 11:14:36.410 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-01-02 11:14:36.410 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-01-02 11:14:36.411 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+2019-01-02 11:14:36.417 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+2019-01-02 11:14:36.417 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1169 ms
+2019-01-02 11:14:36.516 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-02 11:14:36.518 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-02 11:14:36.518 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2019-01-02 11:14:36.521 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@d613308{application,/,[file:///C:/Users/mike/AppData/Local/Temp/jetty-docbase.5827899521238860254.19008/],AVAILABLE}
+2019-01-02 11:14:36.522 [main] INFO  org.eclipse.jetty.server.Server - Started @7513ms
+2019-01-02 11:14:37.037 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/basicinfo/updateInfo/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.BasicInfoController.updateinfo(com.thinkit.microservicecloud.entities.console.BasicInfo,java.lang.String)
+2019-01-02 11:14:37.039 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/company_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.CompanyInfoController.company(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2019-01-02 11:14:37.039 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/personal_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.PersonalInfoController.person(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,java.lang.String)
+2019-01-02 11:14:37.040 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/sdk/offlineasrSDK/{session}],methods=[GET]}" onto org.springframework.http.ResponseEntity<org.springframework.core.io.InputStreamResource> com.thinkit.microservicecloud.controller.SDKdownloadController.download_offlineasrSDK(javax.servlet.http.HttpServletRequest)
+2019-01-02 11:14:37.040 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/privoder/console/serviceproduct/selectProducts/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.ServiceProduct> com.thinkit.microservicecloud.controller.ServiceProductController.selectProducts()
+2019-01-02 11:14:37.041 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/createapp/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.createUserApp(com.thinkit.microservicecloud.entities.console.UserApp,java.lang.String)
+2019-01-02 11:14:37.042 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/appdetail/{session}/{appid}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.Appdetail> com.thinkit.microservicecloud.controller.UserAppController.appdetail(java.lang.String,java.lang.String)
+2019-01-02 11:14:37.042 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/delapp/{session}/{id}],methods=[DELETE]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.delapp(java.lang.String,int)
+2019-01-02 11:14:37.042 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/myapps/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.MyApps> com.thinkit.microservicecloud.controller.UserAppController.myapps(java.lang.String)
+2019-01-02 11:14:37.046 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-02 11:14:37.046 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-02 11:14:37.341 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 11:14:35 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 11:14:38.882 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-01-02 11:14:39.462 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 11:14:39.462 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 11:14:39.465 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 11:14:39.465 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 11:14:39.566 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-01-02 11:14:39.567 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-02 11:14:39.573 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-02 11:14:39.575 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-02 11:14:39.575 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-02 11:14:39.578 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-02 11:14:39.587 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-02 11:14:39.596 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=69c79f09,type=ConfigurationPropertiesRebinder]
+2019-01-02 11:14:39.601 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-01-02 11:14:39.766 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-01-02 11:14:39.773 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-01-02 11:14:39.805 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-01-02 11:14:40.216 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-01-02 11:14:40.216 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-01-02 11:14:40.288 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-01-02 11:14:40.288 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-01-02 11:14:40.424 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 11:14:40.663 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-01-02 11:14:40.663 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-01-02 11:14:40.663 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-01-02 11:14:40.663 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-01-02 11:14:40.663 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-01-02 11:14:40.663 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-01-02 11:14:40.663 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-01-02 11:14:40.770 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-01-02 11:14:40.772 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-01-02 11:14:40.774 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-01-02 11:14:40.777 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1546398880777 with initial instances count: 1
+2019-01-02 11:14:40.794 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application microservicecloud-console with eureka with status UP
+2019-01-02 11:14:40.794 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1546398880794, current=UP, previous=STARTING]
+2019-01-02 11:14:40.796 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008: registering service...
+2019-01-02 11:14:40.814 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-02 11:14:40.814 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-02 11:14:40.830 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2019-01-02 11:14:40.840 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008 - registration status: 204
+2019-01-02 11:14:40.859 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@25673087{HTTP/1.1,[http/1.1]}{0.0.0.0:19008}
+2019-01-02 11:14:40.862 [main] INFO  o.s.b.c.e.jetty.JettyEmbeddedServletContainer - Jetty started on port(s) 19008 (http/1.1)
+2019-01-02 11:14:40.862 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 19008
+2019-01-02 11:14:40.865 [main] INFO  com.thinkit.Provider_console_app - Started Provider_console_app in 10.808 seconds (JVM running for 11.857)
+2019-01-02 11:16:17.645 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+2019-01-02 11:16:18.722 [main] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/microservicecloud-console/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-01-02 11:16:18.730 [main] INFO  com.thinkit.Provider_console_app - No active profile set, falling back to default profiles: default
+2019-01-02 11:16:18.762 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 11:16:18 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 11:16:19.187 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'interceptorConfig' with a different definition: replacing [Generic bean: class [com.thinkit.microservicecloud.aop.InterceptorConfig]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\应用开发组git\语音开放平台\新版\OpenPlatform\src\microservicecloud52078102\microservicecloud-privoder-console\target\classes\com\thinkit\microservicecloud\aop\InterceptorConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=webAppConfig; factoryMethodName=interceptorConfig; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/thinkit/microservicecloud/aop/WebAppConfig.class]]
+2019-01-02 11:16:19.307 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-02 11:16:19.499 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=5fc1073e-3b7d-3ee7-a8ee-256df9f61c6f
+2019-01-02 11:16:19.514 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-02 11:16:19.585 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$10e83de3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 11:16:19.613 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2d0240e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 11:16:19.740 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @7510ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-01-02 11:16:19.833 [main] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 19008
+2019-01-02 11:16:19.834 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_161-b12
+2019-01-02 11:16:19.919 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-01-02 11:16:19.919 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-01-02 11:16:19.921 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+2019-01-02 11:16:19.926 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+2019-01-02 11:16:19.926 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1164 ms
+2019-01-02 11:16:20.020 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-02 11:16:20.022 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-02 11:16:20.022 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2019-01-02 11:16:20.025 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@d613308{application,/,[file:///C:/Users/mike/AppData/Local/Temp/jetty-docbase.5896619505198190870.19008/],AVAILABLE}
+2019-01-02 11:16:20.026 [main] INFO  org.eclipse.jetty.server.Server - Started @7797ms
+2019-01-02 11:16:20.545 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/basicInfo/updateInfo/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.BasicInfoController.updateinfo(com.thinkit.microservicecloud.entities.console.BasicInfo,java.lang.String)
+2019-01-02 11:16:20.547 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/company_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.CompanyInfoController.company(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2019-01-02 11:16:20.547 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/personal_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.PersonalInfoController.person(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,java.lang.String)
+2019-01-02 11:16:20.548 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/sdk/offlineasrSDK/{session}],methods=[GET]}" onto org.springframework.http.ResponseEntity<org.springframework.core.io.InputStreamResource> com.thinkit.microservicecloud.controller.SDKdownloadController.download_offlineasrSDK(javax.servlet.http.HttpServletRequest)
+2019-01-02 11:16:20.548 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/privoder/console/serviceproduct/selectProducts/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.ServiceProduct> com.thinkit.microservicecloud.controller.ServiceProductController.selectProducts()
+2019-01-02 11:16:20.548 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/appdetail/{session}/{appid}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.Appdetail> com.thinkit.microservicecloud.controller.UserAppController.appdetail(java.lang.String,java.lang.String)
+2019-01-02 11:16:20.548 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/delapp/{session}/{id}],methods=[DELETE]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.delapp(java.lang.String,int)
+2019-01-02 11:16:20.549 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/createapp/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.createUserApp(com.thinkit.microservicecloud.entities.console.UserApp,java.lang.String)
+2019-01-02 11:16:20.549 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/myapps/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.MyApps> com.thinkit.microservicecloud.controller.UserAppController.myapps(java.lang.String)
+2019-01-02 11:16:20.552 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-02 11:16:20.553 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-02 11:16:20.860 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 11:16:18 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 11:16:22.385 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-01-02 11:16:22.960 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 11:16:22.961 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 11:16:22.964 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 11:16:22.964 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 11:16:23.061 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-01-02 11:16:23.063 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-02 11:16:23.071 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-02 11:16:23.072 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-02 11:16:23.074 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-02 11:16:23.076 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-02 11:16:23.087 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-02 11:16:23.098 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=69c79f09,type=ConfigurationPropertiesRebinder]
+2019-01-02 11:16:23.103 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-01-02 11:16:23.299 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-01-02 11:16:23.305 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-01-02 11:16:23.337 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-01-02 11:16:23.750 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-01-02 11:16:23.750 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-01-02 11:16:23.826 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-01-02 11:16:23.826 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-01-02 11:16:23.970 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 11:16:24.196 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-01-02 11:16:24.196 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-01-02 11:16:24.197 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-01-02 11:16:24.197 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-01-02 11:16:24.197 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-01-02 11:16:24.197 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-01-02 11:16:24.197 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-01-02 11:16:24.300 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-01-02 11:16:24.302 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-01-02 11:16:24.304 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-01-02 11:16:24.306 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1546398984306 with initial instances count: 1
+2019-01-02 11:16:24.322 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application microservicecloud-console with eureka with status UP
+2019-01-02 11:16:24.322 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1546398984322, current=UP, previous=STARTING]
+2019-01-02 11:16:24.324 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008: registering service...
+2019-01-02 11:16:24.346 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-02 11:16:24.346 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-02 11:16:24.362 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2019-01-02 11:16:24.368 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008 - registration status: 204
+2019-01-02 11:16:24.391 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@25673087{HTTP/1.1,[http/1.1]}{0.0.0.0:19008}
+2019-01-02 11:16:24.393 [main] INFO  o.s.b.c.e.jetty.JettyEmbeddedServletContainer - Jetty started on port(s) 19008 (http/1.1)
+2019-01-02 11:16:24.394 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 19008
+2019-01-02 11:16:24.397 [main] INFO  com.thinkit.Provider_console_app - Started Provider_console_app in 10.957 seconds (JVM running for 12.168)
+2019-01-02 11:18:16.222 [qtp261429887-36] ERROR c.t.m.controller.BasicInfoController - Invalid bound statement (not found): com.thinkit.microservicecloud.dao.BasicInfoCurd.update_basicinfo
+2019-01-02 11:19:51.514 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+2019-01-02 11:19:52.597 [main] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/microservicecloud-console/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-01-02 11:19:52.605 [main] INFO  com.thinkit.Provider_console_app - No active profile set, falling back to default profiles: default
+2019-01-02 11:19:52.635 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 11:19:52 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 11:19:53.031 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'interceptorConfig' with a different definition: replacing [Generic bean: class [com.thinkit.microservicecloud.aop.InterceptorConfig]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\应用开发组git\语音开放平台\新版\OpenPlatform\src\microservicecloud52078102\microservicecloud-privoder-console\target\classes\com\thinkit\microservicecloud\aop\InterceptorConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=webAppConfig; factoryMethodName=interceptorConfig; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/thinkit/microservicecloud/aop/WebAppConfig.class]]
+2019-01-02 11:19:53.159 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-02 11:19:53.350 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=5fc1073e-3b7d-3ee7-a8ee-256df9f61c6f
+2019-01-02 11:19:53.364 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-02 11:19:53.436 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$10e83de3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 11:19:53.463 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2d0240e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 11:19:53.583 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @7523ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-01-02 11:19:53.678 [main] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 19008
+2019-01-02 11:19:53.680 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_161-b12
+2019-01-02 11:19:53.771 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-01-02 11:19:53.772 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-01-02 11:19:53.773 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+2019-01-02 11:19:53.778 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+2019-01-02 11:19:53.778 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1143 ms
+2019-01-02 11:19:53.874 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-02 11:19:53.876 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-02 11:19:53.876 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2019-01-02 11:19:53.880 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@d613308{application,/,[file:///C:/Users/mike/AppData/Local/Temp/jetty-docbase.5846077806464588678.19008/],AVAILABLE}
+2019-01-02 11:19:53.881 [main] INFO  org.eclipse.jetty.server.Server - Started @7822ms
+2019-01-02 11:19:54.399 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/basicInfo/updateInfo/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.BasicInfoController.updateinfo(com.thinkit.microservicecloud.entities.console.BasicInfo,java.lang.String)
+2019-01-02 11:19:54.402 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/company_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.CompanyInfoController.company(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2019-01-02 11:19:54.402 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/personal_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.PersonalInfoController.person(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,java.lang.String)
+2019-01-02 11:19:54.403 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/sdk/offlineasrSDK/{session}],methods=[GET]}" onto org.springframework.http.ResponseEntity<org.springframework.core.io.InputStreamResource> com.thinkit.microservicecloud.controller.SDKdownloadController.download_offlineasrSDK(javax.servlet.http.HttpServletRequest)
+2019-01-02 11:19:54.404 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/privoder/console/serviceproduct/selectProducts/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.ServiceProduct> com.thinkit.microservicecloud.controller.ServiceProductController.selectProducts()
+2019-01-02 11:19:54.404 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/createapp/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.createUserApp(com.thinkit.microservicecloud.entities.console.UserApp,java.lang.String)
+2019-01-02 11:19:54.405 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/appdetail/{session}/{appid}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.Appdetail> com.thinkit.microservicecloud.controller.UserAppController.appdetail(java.lang.String,java.lang.String)
+2019-01-02 11:19:54.405 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/myapps/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.MyApps> com.thinkit.microservicecloud.controller.UserAppController.myapps(java.lang.String)
+2019-01-02 11:19:54.405 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/delapp/{session}/{id}],methods=[DELETE]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.delapp(java.lang.String,int)
+2019-01-02 11:19:54.408 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-02 11:19:54.409 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-02 11:19:54.690 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 11:19:52 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 11:19:56.219 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-01-02 11:19:56.821 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 11:19:56.821 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 11:19:56.825 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 11:19:56.825 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 11:19:56.921 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-01-02 11:19:56.923 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-02 11:19:56.929 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-02 11:19:56.931 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-02 11:19:56.932 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-02 11:19:56.934 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-02 11:19:56.950 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-02 11:19:56.960 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=69c79f09,type=ConfigurationPropertiesRebinder]
+2019-01-02 11:19:56.965 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-01-02 11:19:57.148 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-01-02 11:19:57.154 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-01-02 11:19:57.187 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-01-02 11:19:57.605 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-01-02 11:19:57.605 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-01-02 11:19:57.678 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-01-02 11:19:57.679 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-01-02 11:19:57.823 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 11:19:58.052 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-01-02 11:19:58.052 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-01-02 11:19:58.052 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-01-02 11:19:58.052 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-01-02 11:19:58.052 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-01-02 11:19:58.052 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-01-02 11:19:58.052 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-01-02 11:19:58.158 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-01-02 11:19:58.160 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-01-02 11:19:58.162 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-01-02 11:19:58.164 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1546399198164 with initial instances count: 1
+2019-01-02 11:19:58.182 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application microservicecloud-console with eureka with status UP
+2019-01-02 11:19:58.182 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1546399198182, current=UP, previous=STARTING]
+2019-01-02 11:19:58.184 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008: registering service...
+2019-01-02 11:19:58.292 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-02 11:19:58.293 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-02 11:19:58.312 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2019-01-02 11:19:58.316 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008 - registration status: 204
+2019-01-02 11:19:58.345 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@25673087{HTTP/1.1,[http/1.1]}{0.0.0.0:19008}
+2019-01-02 11:19:58.348 [main] INFO  o.s.b.c.e.jetty.JettyEmbeddedServletContainer - Jetty started on port(s) 19008 (http/1.1)
+2019-01-02 11:19:58.348 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 19008
+2019-01-02 11:19:58.351 [main] INFO  com.thinkit.Provider_console_app - Started Provider_console_app in 11.126 seconds (JVM running for 12.292)
+2019-01-02 11:20:12.304 [qtp261429887-41] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-01-02 11:20:17.516 [qtp261429887-41] ERROR c.t.m.controller.BasicInfoController - nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'primary_industry' in 'class com.thinkit.microservicecloud.entities.console.BasicInfo'
+2019-01-02 11:21:40.932 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+2019-01-02 11:21:42.015 [main] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/microservicecloud-console/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-01-02 11:21:42.021 [main] INFO  com.thinkit.Provider_console_app - No active profile set, falling back to default profiles: default
+2019-01-02 11:21:42.047 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 11:21:42 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 11:21:42.459 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'interceptorConfig' with a different definition: replacing [Generic bean: class [com.thinkit.microservicecloud.aop.InterceptorConfig]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\应用开发组git\语音开放平台\新版\OpenPlatform\src\microservicecloud52078102\microservicecloud-privoder-console\target\classes\com\thinkit\microservicecloud\aop\InterceptorConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=webAppConfig; factoryMethodName=interceptorConfig; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/thinkit/microservicecloud/aop/WebAppConfig.class]]
+2019-01-02 11:21:42.578 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-02 11:21:42.762 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=5fc1073e-3b7d-3ee7-a8ee-256df9f61c6f
+2019-01-02 11:21:42.777 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-02 11:21:42.860 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$10e83de3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 11:21:42.889 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2d0240e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 11:21:43.019 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @7501ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-01-02 11:21:43.114 [main] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 19008
+2019-01-02 11:21:43.116 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_161-b12
+2019-01-02 11:21:43.217 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-01-02 11:21:43.217 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-01-02 11:21:43.219 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+2019-01-02 11:21:43.226 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+2019-01-02 11:21:43.227 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1180 ms
+2019-01-02 11:21:43.319 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-02 11:21:43.321 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-02 11:21:43.321 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2019-01-02 11:21:43.324 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@d613308{application,/,[file:///C:/Users/mike/AppData/Local/Temp/jetty-docbase.7040180525352174254.19008/],AVAILABLE}
+2019-01-02 11:21:43.325 [main] INFO  org.eclipse.jetty.server.Server - Started @7808ms
+2019-01-02 11:21:43.851 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/basicInfo/updateInfo/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.BasicInfoController.updateinfo(com.thinkit.microservicecloud.entities.console.BasicInfo,java.lang.String)
+2019-01-02 11:21:43.852 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/company_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.CompanyInfoController.company(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2019-01-02 11:21:43.853 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/personal_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.PersonalInfoController.person(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,java.lang.String)
+2019-01-02 11:21:43.854 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/sdk/offlineasrSDK/{session}],methods=[GET]}" onto org.springframework.http.ResponseEntity<org.springframework.core.io.InputStreamResource> com.thinkit.microservicecloud.controller.SDKdownloadController.download_offlineasrSDK(javax.servlet.http.HttpServletRequest)
+2019-01-02 11:21:43.854 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/privoder/console/serviceproduct/selectProducts/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.ServiceProduct> com.thinkit.microservicecloud.controller.ServiceProductController.selectProducts()
+2019-01-02 11:21:43.855 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/myapps/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.MyApps> com.thinkit.microservicecloud.controller.UserAppController.myapps(java.lang.String)
+2019-01-02 11:21:43.855 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/delapp/{session}/{id}],methods=[DELETE]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.delapp(java.lang.String,int)
+2019-01-02 11:21:43.855 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/createapp/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.createUserApp(com.thinkit.microservicecloud.entities.console.UserApp,java.lang.String)
+2019-01-02 11:21:43.856 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/appdetail/{session}/{appid}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.Appdetail> com.thinkit.microservicecloud.controller.UserAppController.appdetail(java.lang.String,java.lang.String)
+2019-01-02 11:21:43.860 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-02 11:21:43.861 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-02 11:21:44.172 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 11:21:42 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 11:21:45.708 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-01-02 11:21:46.296 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 11:21:46.296 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 11:21:46.300 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 11:21:46.300 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 11:21:46.399 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-01-02 11:21:46.400 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-02 11:21:46.407 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-02 11:21:46.409 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-02 11:21:46.411 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-02 11:21:46.412 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-02 11:21:46.425 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-02 11:21:46.435 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=69c79f09,type=ConfigurationPropertiesRebinder]
+2019-01-02 11:21:46.441 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-01-02 11:21:46.620 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-01-02 11:21:46.626 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-01-02 11:21:46.661 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-01-02 11:21:47.081 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-01-02 11:21:47.081 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-01-02 11:21:47.157 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-01-02 11:21:47.157 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-01-02 11:21:47.305 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 11:21:47.536 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-01-02 11:21:47.536 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-01-02 11:21:47.536 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-01-02 11:21:47.536 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-01-02 11:21:47.536 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-01-02 11:21:47.536 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-01-02 11:21:47.536 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-01-02 11:21:47.641 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-01-02 11:21:47.643 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-01-02 11:21:47.645 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-01-02 11:21:47.647 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1546399307647 with initial instances count: 1
+2019-01-02 11:21:47.664 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application microservicecloud-console with eureka with status UP
+2019-01-02 11:21:47.664 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1546399307664, current=UP, previous=STARTING]
+2019-01-02 11:21:47.666 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008: registering service...
+2019-01-02 11:21:47.684 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-02 11:21:47.685 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-02 11:21:47.700 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2019-01-02 11:21:47.706 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008 - registration status: 204
+2019-01-02 11:21:47.728 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@25673087{HTTP/1.1,[http/1.1]}{0.0.0.0:19008}
+2019-01-02 11:21:47.731 [main] INFO  o.s.b.c.e.jetty.JettyEmbeddedServletContainer - Jetty started on port(s) 19008 (http/1.1)
+2019-01-02 11:21:47.731 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 19008
+2019-01-02 11:21:47.734 [main] INFO  com.thinkit.Provider_console_app - Started Provider_console_app in 11.015 seconds (JVM running for 12.218)
+2019-01-02 11:22:02.979 [qtp261429887-41] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-01-02 11:22:08.135 [qtp261429887-41] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-01-02 11:22:08.264 [qtp261429887-41] INFO  o.s.jdbc.support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2019-01-02 11:22:08.283 [qtp261429887-41] ERROR c.t.m.controller.BasicInfoController - 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: Table 'thinkit.basic_info' doesn't exist
+### The error may involve com.thinkit.microservicecloud.dao.BasicInfoCurd.update_basicinfo-Inline
+### The error occurred while setting parameters
+### SQL: update  basic_info set username=?,property=?,primary_industry=?,second_industry=?,main_business=?,   website=? where userid=?;
+### Cause: com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: Table 'thinkit.basic_info' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: Table 'thinkit.basic_info' doesn't exist
+2019-01-02 11:23:11.500 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+2019-01-02 11:23:12.574 [main] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/microservicecloud-console/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-01-02 11:23:12.576 [main] INFO  com.thinkit.Provider_console_app - No active profile set, falling back to default profiles: default
+2019-01-02 11:23:12.587 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 11:23:12 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 11:23:12.984 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'interceptorConfig' with a different definition: replacing [Generic bean: class [com.thinkit.microservicecloud.aop.InterceptorConfig]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\应用开发组git\语音开放平台\新版\OpenPlatform\src\microservicecloud52078102\microservicecloud-privoder-console\target\classes\com\thinkit\microservicecloud\aop\InterceptorConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=webAppConfig; factoryMethodName=interceptorConfig; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/thinkit/microservicecloud/aop/WebAppConfig.class]]
+2019-01-02 11:23:13.109 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-02 11:23:13.300 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=5fc1073e-3b7d-3ee7-a8ee-256df9f61c6f
+2019-01-02 11:23:13.313 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-02 11:23:13.401 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$10e83de3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 11:23:13.427 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2d0240e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 11:23:13.537 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @7480ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-01-02 11:23:13.637 [main] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 19008
+2019-01-02 11:23:13.639 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_161-b12
+2019-01-02 11:23:13.730 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-01-02 11:23:13.731 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-01-02 11:23:13.732 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+2019-01-02 11:23:13.738 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+2019-01-02 11:23:13.738 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1151 ms
+2019-01-02 11:23:13.848 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-02 11:23:13.851 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-02 11:23:13.851 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2019-01-02 11:23:13.855 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@d613308{application,/,[file:///C:/Users/mike/AppData/Local/Temp/jetty-docbase.3037376926088469196.19008/],AVAILABLE}
+2019-01-02 11:23:13.855 [main] INFO  org.eclipse.jetty.server.Server - Started @7799ms
+2019-01-02 11:23:14.378 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/basicInfo/updateInfo/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.BasicInfoController.updateinfo(com.thinkit.microservicecloud.entities.console.BasicInfo,java.lang.String)
+2019-01-02 11:23:14.379 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/company_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.CompanyInfoController.company(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2019-01-02 11:23:14.379 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/personal_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.PersonalInfoController.person(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,java.lang.String)
+2019-01-02 11:23:14.380 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/sdk/offlineasrSDK/{session}],methods=[GET]}" onto org.springframework.http.ResponseEntity<org.springframework.core.io.InputStreamResource> com.thinkit.microservicecloud.controller.SDKdownloadController.download_offlineasrSDK(javax.servlet.http.HttpServletRequest)
+2019-01-02 11:23:14.381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/privoder/console/serviceproduct/selectProducts/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.ServiceProduct> com.thinkit.microservicecloud.controller.ServiceProductController.selectProducts()
+2019-01-02 11:23:14.381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/myapps/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.MyApps> com.thinkit.microservicecloud.controller.UserAppController.myapps(java.lang.String)
+2019-01-02 11:23:14.381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/appdetail/{session}/{appid}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.Appdetail> com.thinkit.microservicecloud.controller.UserAppController.appdetail(java.lang.String,java.lang.String)
+2019-01-02 11:23:14.381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/delapp/{session}/{id}],methods=[DELETE]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.delapp(java.lang.String,int)
+2019-01-02 11:23:14.382 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/createapp/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.createUserApp(com.thinkit.microservicecloud.entities.console.UserApp,java.lang.String)
+2019-01-02 11:23:14.386 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-02 11:23:14.386 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-02 11:23:14.654 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 11:23:12 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 11:23:16.195 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-01-02 11:23:16.742 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 11:23:16.742 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 11:23:16.746 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 11:23:16.746 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 11:23:16.845 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-01-02 11:23:16.846 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-02 11:23:16.852 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-02 11:23:16.854 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-02 11:23:16.856 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-02 11:23:16.858 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-02 11:23:16.869 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-02 11:23:16.880 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=69c79f09,type=ConfigurationPropertiesRebinder]
+2019-01-02 11:23:16.886 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-01-02 11:23:17.067 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-01-02 11:23:17.075 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-01-02 11:23:17.113 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-01-02 11:23:17.557 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-01-02 11:23:17.558 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-01-02 11:23:17.653 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-01-02 11:23:17.653 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-01-02 11:23:17.862 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 11:23:18.093 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-01-02 11:23:18.093 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-01-02 11:23:18.093 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-01-02 11:23:18.093 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-01-02 11:23:18.093 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-01-02 11:23:18.093 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-01-02 11:23:18.093 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-01-02 11:23:18.202 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-01-02 11:23:18.204 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-01-02 11:23:18.206 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-01-02 11:23:18.208 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1546399398208 with initial instances count: 1
+2019-01-02 11:23:18.225 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application microservicecloud-console with eureka with status UP
+2019-01-02 11:23:18.225 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1546399398225, current=UP, previous=STARTING]
+2019-01-02 11:23:18.227 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008: registering service...
+2019-01-02 11:23:18.247 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-02 11:23:18.247 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-02 11:23:18.264 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2019-01-02 11:23:18.270 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008 - registration status: 204
+2019-01-02 11:23:18.297 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@25673087{HTTP/1.1,[http/1.1]}{0.0.0.0:19008}
+2019-01-02 11:23:18.300 [main] INFO  o.s.b.c.e.jetty.JettyEmbeddedServletContainer - Jetty started on port(s) 19008 (http/1.1)
+2019-01-02 11:23:18.301 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 19008
+2019-01-02 11:23:18.304 [main] INFO  com.thinkit.Provider_console_app - Started Provider_console_app in 10.975 seconds (JVM running for 12.248)
+2019-01-02 11:23:36.676 [qtp261429887-39] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-01-02 11:23:41.790 [qtp261429887-39] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-01-02 11:23:41.821 [qtp261429887-39] INFO  o.s.jdbc.support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2019-01-02 11:23:41.825 [qtp261429887-39] ERROR c.t.m.controller.BasicInfoController - 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: Unknown column 'second_industry' in 'field list'
+### The error may involve com.thinkit.microservicecloud.dao.BasicInfoCurd.update_basicinfo-Inline
+### The error occurred while setting parameters
+### SQL: update  basic_info set username=?,property=?,primary_industry=?,second_industry=?,main_business=?,   website=? where userid=?;
+### Cause: com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: Unknown column 'second_industry' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: Unknown column 'second_industry' in 'field list'
+2019-01-02 11:28:18.098 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 11:29:42.910 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+2019-01-02 11:29:43.994 [main] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/microservicecloud-console/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-01-02 11:29:43.998 [main] INFO  com.thinkit.Provider_console_app - No active profile set, falling back to default profiles: default
+2019-01-02 11:29:44.015 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 11:29:44 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 11:29:44.418 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'interceptorConfig' with a different definition: replacing [Generic bean: class [com.thinkit.microservicecloud.aop.InterceptorConfig]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\应用开发组git\语音开放平台\新版\OpenPlatform\src\microservicecloud52078102\microservicecloud-privoder-console\target\classes\com\thinkit\microservicecloud\aop\InterceptorConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=webAppConfig; factoryMethodName=interceptorConfig; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/thinkit/microservicecloud/aop/WebAppConfig.class]]
+2019-01-02 11:29:44.544 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-02 11:29:44.741 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=5fc1073e-3b7d-3ee7-a8ee-256df9f61c6f
+2019-01-02 11:29:44.756 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-02 11:29:44.842 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$10e83de3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 11:29:44.869 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2d0240e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 11:29:44.992 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @7794ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-01-02 11:29:45.090 [main] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 19008
+2019-01-02 11:29:45.091 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_161-b12
+2019-01-02 11:29:45.186 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-01-02 11:29:45.187 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-01-02 11:29:45.188 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+2019-01-02 11:29:45.193 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+2019-01-02 11:29:45.193 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1178 ms
+2019-01-02 11:29:45.292 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-02 11:29:45.295 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-02 11:29:45.295 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2019-01-02 11:29:45.300 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@d613308{application,/,[file:///C:/Users/mike/AppData/Local/Temp/jetty-docbase.5317129414075741310.19008/],AVAILABLE}
+2019-01-02 11:29:45.301 [main] INFO  org.eclipse.jetty.server.Server - Started @8104ms
+2019-01-02 11:29:45.851 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/basicInfo/updateInfo/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.BasicInfoController.updateinfo(com.thinkit.microservicecloud.entities.console.BasicInfo,java.lang.String)
+2019-01-02 11:29:45.853 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/company_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.CompanyInfoController.company(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2019-01-02 11:29:45.853 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/personal_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.PersonalInfoController.person(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,java.lang.String)
+2019-01-02 11:29:45.854 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/sdk/offlineasrSDK/{session}],methods=[GET]}" onto org.springframework.http.ResponseEntity<org.springframework.core.io.InputStreamResource> com.thinkit.microservicecloud.controller.SDKdownloadController.download_offlineasrSDK(javax.servlet.http.HttpServletRequest)
+2019-01-02 11:29:45.854 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/privoder/console/serviceproduct/selectProducts/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.ServiceProduct> com.thinkit.microservicecloud.controller.ServiceProductController.selectProducts()
+2019-01-02 11:29:45.855 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/delapp/{session}/{id}],methods=[DELETE]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.delapp(java.lang.String,int)
+2019-01-02 11:29:45.855 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/createapp/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.createUserApp(com.thinkit.microservicecloud.entities.console.UserApp,java.lang.String)
+2019-01-02 11:29:45.855 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/appdetail/{session}/{appid}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.Appdetail> com.thinkit.microservicecloud.controller.UserAppController.appdetail(java.lang.String,java.lang.String)
+2019-01-02 11:29:45.856 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/myapps/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.MyApps> com.thinkit.microservicecloud.controller.UserAppController.myapps(java.lang.String)
+2019-01-02 11:29:45.860 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-02 11:29:45.860 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-02 11:29:46.152 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 11:29:44 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 11:29:47.691 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-01-02 11:29:48.331 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 11:29:48.331 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 11:29:48.335 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 11:29:48.335 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 11:29:48.439 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-01-02 11:29:48.441 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-02 11:29:48.449 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-02 11:29:48.451 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-02 11:29:48.452 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-02 11:29:48.455 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-02 11:29:48.470 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-02 11:29:48.481 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=69c79f09,type=ConfigurationPropertiesRebinder]
+2019-01-02 11:29:48.488 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-01-02 11:29:48.677 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-01-02 11:29:48.685 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-01-02 11:29:48.728 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-01-02 11:29:49.177 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-01-02 11:29:49.177 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-01-02 11:29:49.258 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-01-02 11:29:49.258 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-01-02 11:29:49.417 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 11:29:49.649 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-01-02 11:29:49.649 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-01-02 11:29:49.649 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-01-02 11:29:49.649 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-01-02 11:29:49.650 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-01-02 11:29:49.650 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-01-02 11:29:49.650 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-01-02 11:29:49.767 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-01-02 11:29:49.769 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-01-02 11:29:49.772 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-01-02 11:29:49.775 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1546399789774 with initial instances count: 1
+2019-01-02 11:29:49.791 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application microservicecloud-console with eureka with status UP
+2019-01-02 11:29:49.791 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1546399789791, current=UP, previous=STARTING]
+2019-01-02 11:29:49.793 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008: registering service...
+2019-01-02 11:29:49.816 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-02 11:29:49.817 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-02 11:29:49.833 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2019-01-02 11:29:49.840 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008 - registration status: 204
+2019-01-02 11:29:49.865 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@25673087{HTTP/1.1,[http/1.1]}{0.0.0.0:19008}
+2019-01-02 11:29:49.867 [main] INFO  o.s.b.c.e.jetty.JettyEmbeddedServletContainer - Jetty started on port(s) 19008 (http/1.1)
+2019-01-02 11:29:49.868 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 19008
+2019-01-02 11:29:49.873 [main] INFO  com.thinkit.Provider_console_app - Started Provider_console_app in 11.455 seconds (JVM running for 12.675)
+2019-01-02 11:29:52.656 [qtp261429887-40] ERROR c.t.m.controller.BasicInfoController - nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'second_industry' in 'class com.thinkit.microservicecloud.entities.console.BasicInfo'
+2019-01-02 11:30:45.948 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+2019-01-02 11:30:47.032 [main] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/microservicecloud-console/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-01-02 11:30:47.040 [main] INFO  com.thinkit.Provider_console_app - No active profile set, falling back to default profiles: default
+2019-01-02 11:30:47.066 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 11:30:47 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 11:30:47.486 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'interceptorConfig' with a different definition: replacing [Generic bean: class [com.thinkit.microservicecloud.aop.InterceptorConfig]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\应用开发组git\语音开放平台\新版\OpenPlatform\src\microservicecloud52078102\microservicecloud-privoder-console\target\classes\com\thinkit\microservicecloud\aop\InterceptorConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=webAppConfig; factoryMethodName=interceptorConfig; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/thinkit/microservicecloud/aop/WebAppConfig.class]]
+2019-01-02 11:30:47.611 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-02 11:30:47.826 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=5fc1073e-3b7d-3ee7-a8ee-256df9f61c6f
+2019-01-02 11:30:47.843 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-02 11:30:47.937 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$10e83de3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 11:30:47.965 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2d0240e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 11:30:48.106 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @7706ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-01-02 11:30:48.211 [main] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 19008
+2019-01-02 11:30:48.213 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_161-b12
+2019-01-02 11:30:48.315 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-01-02 11:30:48.315 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-01-02 11:30:48.317 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+2019-01-02 11:30:48.324 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+2019-01-02 11:30:48.324 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1258 ms
+2019-01-02 11:30:48.423 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-02 11:30:48.426 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-02 11:30:48.426 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2019-01-02 11:30:48.430 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@d613308{application,/,[file:///C:/Users/mike/AppData/Local/Temp/jetty-docbase.9213161172037017920.19008/],AVAILABLE}
+2019-01-02 11:30:48.430 [main] INFO  org.eclipse.jetty.server.Server - Started @8032ms
+2019-01-02 11:30:49.017 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/basicInfo/updateInfo/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.BasicInfoController.updateinfo(com.thinkit.microservicecloud.entities.console.BasicInfo,java.lang.String)
+2019-01-02 11:30:49.019 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/company_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.CompanyInfoController.company(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2019-01-02 11:30:49.020 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/personal_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.PersonalInfoController.person(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,java.lang.String)
+2019-01-02 11:30:49.021 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/sdk/offlineasrSDK/{session}],methods=[GET]}" onto org.springframework.http.ResponseEntity<org.springframework.core.io.InputStreamResource> com.thinkit.microservicecloud.controller.SDKdownloadController.download_offlineasrSDK(javax.servlet.http.HttpServletRequest)
+2019-01-02 11:30:49.021 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/privoder/console/serviceproduct/selectProducts/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.ServiceProduct> com.thinkit.microservicecloud.controller.ServiceProductController.selectProducts()
+2019-01-02 11:30:49.022 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/delapp/{session}/{id}],methods=[DELETE]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.delapp(java.lang.String,int)
+2019-01-02 11:30:49.022 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/createapp/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.createUserApp(com.thinkit.microservicecloud.entities.console.UserApp,java.lang.String)
+2019-01-02 11:30:49.022 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/myapps/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.MyApps> com.thinkit.microservicecloud.controller.UserAppController.myapps(java.lang.String)
+2019-01-02 11:30:49.022 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/appdetail/{session}/{appid}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.Appdetail> com.thinkit.microservicecloud.controller.UserAppController.appdetail(java.lang.String,java.lang.String)
+2019-01-02 11:30:49.026 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-02 11:30:49.026 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-02 11:30:49.292 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 11:30:47 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 11:30:50.841 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-01-02 11:30:51.394 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 11:30:51.394 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 11:30:51.397 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 11:30:51.397 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 11:30:51.498 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-01-02 11:30:51.500 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-02 11:30:51.505 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-02 11:30:51.507 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-02 11:30:51.509 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-02 11:30:51.511 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-02 11:30:51.521 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-02 11:30:51.531 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=69c79f09,type=ConfigurationPropertiesRebinder]
+2019-01-02 11:30:51.536 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-01-02 11:30:51.729 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-01-02 11:30:51.736 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-01-02 11:30:51.777 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-01-02 11:30:52.217 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-01-02 11:30:52.217 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-01-02 11:30:52.316 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-01-02 11:30:52.316 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-01-02 11:30:52.469 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 11:30:52.702 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-01-02 11:30:52.703 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-01-02 11:30:52.703 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-01-02 11:30:52.703 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-01-02 11:30:52.703 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-01-02 11:30:52.703 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-01-02 11:30:52.703 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-01-02 11:30:52.813 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-01-02 11:30:52.815 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-01-02 11:30:52.817 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-01-02 11:30:52.819 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1546399852819 with initial instances count: 1
+2019-01-02 11:30:52.836 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application microservicecloud-console with eureka with status UP
+2019-01-02 11:30:52.836 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1546399852836, current=UP, previous=STARTING]
+2019-01-02 11:30:52.838 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008: registering service...
+2019-01-02 11:30:52.859 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-02 11:30:52.859 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-02 11:30:52.875 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2019-01-02 11:30:52.881 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008 - registration status: 204
+2019-01-02 11:30:52.906 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@25673087{HTTP/1.1,[http/1.1]}{0.0.0.0:19008}
+2019-01-02 11:30:52.909 [main] INFO  o.s.b.c.e.jetty.JettyEmbeddedServletContainer - Jetty started on port(s) 19008 (http/1.1)
+2019-01-02 11:30:52.910 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 19008
+2019-01-02 11:30:52.913 [main] INFO  com.thinkit.Provider_console_app - Started Provider_console_app in 11.23 seconds (JVM running for 12.515)
+2019-01-02 11:30:56.656 [qtp261429887-41] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-01-02 11:31:01.786 [qtp261429887-41] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-01-02 11:31:01.824 [qtp261429887-41] INFO  o.s.jdbc.support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2019-01-02 11:31:01.828 [qtp261429887-41] ERROR c.t.m.controller.BasicInfoController - 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'property = 'ä¸ªäºº' 
+		 primary_industry = 'äº’è�”ç½‘' 
+		 secondary_industry = ' at line 3
+### The error may involve com.thinkit.microservicecloud.dao.BasicInfoCurd.update_basicinfo-Inline
+### The error occurred while setting parameters
+### SQL: update  basic_info set    username = ?     property = ?     primary_industry = ?     secondary_industry = ?            where userid=?;
+### Cause: com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'property = 'ä¸ªäºº' 
+		 primary_industry = 'äº’è�”ç½‘' 
+		 secondary_industry = ' at line 3
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'property = 'ä¸ªäºº' 
+		 primary_industry = 'äº’è�”ç½‘' 
+		 secondary_industry = ' at line 3
+2019-01-02 11:34:21.005 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+2019-01-02 11:34:22.093 [main] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/microservicecloud-console/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-01-02 11:34:22.101 [main] INFO  com.thinkit.Provider_console_app - No active profile set, falling back to default profiles: default
+2019-01-02 11:34:22.136 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 11:34:22 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 11:34:22.547 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'interceptorConfig' with a different definition: replacing [Generic bean: class [com.thinkit.microservicecloud.aop.InterceptorConfig]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\应用开发组git\语音开放平台\新版\OpenPlatform\src\microservicecloud52078102\microservicecloud-privoder-console\target\classes\com\thinkit\microservicecloud\aop\InterceptorConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=webAppConfig; factoryMethodName=interceptorConfig; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/thinkit/microservicecloud/aop/WebAppConfig.class]]
+2019-01-02 11:34:22.673 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-02 11:34:22.864 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=5fc1073e-3b7d-3ee7-a8ee-256df9f61c6f
+2019-01-02 11:34:22.878 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-02 11:34:22.954 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$10e83de3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 11:34:22.982 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2d0240e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 11:34:23.101 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @7815ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-01-02 11:34:23.212 [main] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 19008
+2019-01-02 11:34:23.213 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_161-b12
+2019-01-02 11:34:23.315 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-01-02 11:34:23.315 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-01-02 11:34:23.316 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+2019-01-02 11:34:23.322 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+2019-01-02 11:34:23.323 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1188 ms
+2019-01-02 11:34:23.429 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-02 11:34:23.431 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-02 11:34:23.431 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2019-01-02 11:34:23.435 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@d613308{application,/,[file:///C:/Users/mike/AppData/Local/Temp/jetty-docbase.288903207813663952.19008/],AVAILABLE}
+2019-01-02 11:34:23.435 [main] INFO  org.eclipse.jetty.server.Server - Started @8151ms
+2019-01-02 11:34:23.986 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/basicInfo/updateInfo/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.BasicInfoController.updateinfo(com.thinkit.microservicecloud.entities.console.BasicInfo,java.lang.String)
+2019-01-02 11:34:23.987 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/company_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.CompanyInfoController.company(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2019-01-02 11:34:23.987 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/personal_certificate/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.userlogin.ResultInfo com.thinkit.microservicecloud.controller.PersonalInfoController.person(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,java.lang.String)
+2019-01-02 11:34:23.988 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/sdk/offlineasrSDK/{session}],methods=[GET]}" onto org.springframework.http.ResponseEntity<org.springframework.core.io.InputStreamResource> com.thinkit.microservicecloud.controller.SDKdownloadController.download_offlineasrSDK(javax.servlet.http.HttpServletRequest)
+2019-01-02 11:34:23.988 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/privoder/console/serviceproduct/selectProducts/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.ServiceProduct> com.thinkit.microservicecloud.controller.ServiceProductController.selectProducts()
+2019-01-02 11:34:23.989 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/createapp/{session}],methods=[POST]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.createUserApp(com.thinkit.microservicecloud.entities.console.UserApp,java.lang.String)
+2019-01-02 11:34:23.989 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/myapps/{session}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.MyApps> com.thinkit.microservicecloud.controller.UserAppController.myapps(java.lang.String)
+2019-01-02 11:34:23.989 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/delapp/{session}/{id}],methods=[DELETE]}" onto public com.thinkit.microservicecloud.entities.console.ReturnType com.thinkit.microservicecloud.controller.UserAppController.delapp(java.lang.String,int)
+2019-01-02 11:34:23.989 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/provider/console/appdetail/{session}/{appid}],methods=[GET]}" onto public java.util.List<com.thinkit.microservicecloud.entities.console.Appdetail> com.thinkit.microservicecloud.controller.UserAppController.appdetail(java.lang.String,java.lang.String)
+2019-01-02 11:34:23.994 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-02 11:34:23.994 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-02 11:34:24.272 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69c79f09: startup date [Wed Jan 02 11:34:22 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2925bf5b
+2019-01-02 11:34:25.818 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-01-02 11:34:26.416 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 11:34:26.416 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 11:34:26.421 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-02 11:34:26.421 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-02 11:34:26.520 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-01-02 11:34:26.522 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-02 11:34:26.532 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-02 11:34:26.534 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-02 11:34:26.535 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-02 11:34:26.538 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-02 11:34:26.552 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-02 11:34:26.564 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=69c79f09,type=ConfigurationPropertiesRebinder]
+2019-01-02 11:34:26.569 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-01-02 11:34:26.774 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-01-02 11:34:26.781 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-01-02 11:34:26.833 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-01-02 11:34:27.259 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-01-02 11:34:27.259 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-01-02 11:34:27.346 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-01-02 11:34:27.347 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-01-02 11:34:27.494 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 11:34:27.722 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-01-02 11:34:27.722 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-01-02 11:34:27.722 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-01-02 11:34:27.722 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-01-02 11:34:27.722 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-01-02 11:34:27.722 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-01-02 11:34:27.722 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-01-02 11:34:27.838 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-01-02 11:34:27.840 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-01-02 11:34:27.842 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-01-02 11:34:27.846 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1546400067846 with initial instances count: 1
+2019-01-02 11:34:27.869 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application microservicecloud-console with eureka with status UP
+2019-01-02 11:34:27.869 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1546400067869, current=UP, previous=STARTING]
+2019-01-02 11:34:27.871 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008: registering service...
+2019-01-02 11:34:27.891 [main] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-02 11:34:27.892 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-02 11:34:27.908 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2019-01-02 11:34:27.915 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICECLOUD-CONSOLE/microservicecloud-provider-console-p19008 - registration status: 204
+2019-01-02 11:34:27.941 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@25673087{HTTP/1.1,[http/1.1]}{0.0.0.0:19008}
+2019-01-02 11:34:27.945 [main] INFO  o.s.b.c.e.jetty.JettyEmbeddedServletContainer - Jetty started on port(s) 19008 (http/1.1)
+2019-01-02 11:34:27.945 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 19008
+2019-01-02 11:34:27.948 [main] INFO  com.thinkit.Provider_console_app - Started Provider_console_app in 11.412 seconds (JVM running for 12.664)
+2019-01-02 11:34:49.702 [qtp261429887-41] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-01-02 11:39:27.731 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 11:44:24.598 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 11:49:24.600 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 11:54:24.603 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 11:59:24.604 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 12:04:24.607 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 12:09:24.609 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 12:14:24.611 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 12:19:24.612 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 12:24:24.614 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 12:29:24.616 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 12:34:24.618 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 12:39:24.620 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 12:44:24.622 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 12:49:24.624 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 12:54:24.627 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 12:59:24.629 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 13:04:24.633 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 13:09:24.636 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 13:14:24.638 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 13:19:24.639 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 13:24:24.641 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 13:29:24.644 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 13:34:24.646 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 13:39:24.649 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 13:44:24.651 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 13:49:24.654 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 13:54:24.655 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 13:59:24.657 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 14:04:24.661 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 14:09:24.664 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 14:14:24.666 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 14:19:24.667 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 14:24:24.670 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 14:29:24.672 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 14:34:24.674 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 14:39:24.676 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 14:44:24.678 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 14:49:24.680 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 14:54:24.682 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 14:59:24.685 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 15:04:24.686 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 15:09:24.688 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 15:14:24.690 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 15:19:24.695 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 15:24:24.697 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 15:29:24.699 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 15:34:24.701 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 15:39:24.705 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 15:44:24.706 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-02 15:49:24.709 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

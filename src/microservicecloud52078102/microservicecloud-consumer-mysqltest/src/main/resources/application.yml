@@ -1,0 +1,7 @@
+server:
+  port: 19901
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+       defaultZone:  http://www.eureka02.com:18082/eureka/,http://www.eureka01.com:18081/eureka/

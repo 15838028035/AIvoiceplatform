@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.thinkit.microservicecloud.dao.UserCurd">
+
+	<insert id="insert"   useGeneratedKeys="true"  keyProperty="userid" parameterType="com.thinkit.microservicecloud.entities.userlogin.UserRegister">
+		insert into user(username,password,email,phone,certification_status,creatTime) values(#{username},#{password},#{email},#{phone},0,now());
+	</insert>
+
+
+	<select id="userLogin"  resultType="com.thinkit.microservicecloud.entities.userlogin.User" parameterType="com.thinkit.microservicecloud.entities.userlogin.UserLogin">
+		select userid,username,password,email,phone,creatTime from  user where (username=#{username} or email=#{username} ) and password=#{password};
+	</select>
+
+
+	<update id="resetPassword"   parameterType="com.thinkit.microservicecloud.entities.userlogin.PhonePassword">
+		update  user set password=#{password} where phone=#{phone};
+	</update>
+
+
+</mapper>
+ 
+

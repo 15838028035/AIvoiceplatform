@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.thinkit.microservicecloud.dao.CompanyCertificateCurd">
+
+	<insert id="create"  parameterType="com.thinkit.microservicecloud.entities.console.Company_Certificate" useGeneratedKeys="true" keyProperty="id"  >
+		insert into company_certificate(company_name,company_website,company_field,business_license,address,social_credit_code,contacts,contact_number,status,creatTime,opTime)
+		            values(#{company_name},#{company_website},#{company_field},#{business_license},#{address},#{social_credit_code},#{contacts},#{contact_number},#{status},now(),now());
+	</insert>
+
+
+
+
+</mapper>
+ 
+
